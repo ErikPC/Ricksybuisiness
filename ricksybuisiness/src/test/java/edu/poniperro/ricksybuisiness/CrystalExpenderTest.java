@@ -21,6 +21,9 @@ public class CrystalExpenderTest {
     public void dispatchTest() {
         benyard.dispatch(abradolph);
         assertEquals(8, benyard.stock());
+        CrystalExpender alejandro = new CrystalExpender(0, 0.50);
+        alejandro.dispatch(abradolph);
+        assertEquals(0, alejandro.stock());
     }
 
     @Test
